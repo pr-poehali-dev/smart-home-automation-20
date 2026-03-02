@@ -69,13 +69,29 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1 }}
-          className="mt-16 rounded-3xl overflow-hidden shadow-2xl border-4 border-white"
+          className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-3"
         >
-          <img
-            src="https://cdn.poehali.dev/projects/1a262dcf-e384-44e2-8d98-0b46a8be6f9f/files/4c246540-39af-4d16-933d-78022cf4f3e5.jpg"
-            alt="Яркий праздник от ЯркоФест"
-            className="w-full h-[400px] object-cover"
-          />
+          <div className="col-span-2 rounded-3xl overflow-hidden shadow-xl border-4 border-white">
+            <img
+              src="https://cdn.poehali.dev/projects/1a262dcf-e384-44e2-8d98-0b46a8be6f9f/bucket/28a05c61-1ecc-4f23-88c9-425f9f014e12.jpeg"
+              alt="Детский праздник — Русалочка"
+              className="w-full h-[320px] object-cover"
+            />
+          </div>
+          <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-white">
+            <img
+              src="https://cdn.poehali.dev/projects/1a262dcf-e384-44e2-8d98-0b46a8be6f9f/bucket/c8fd0084-8879-4cd8-9e50-710dc1072cef.jpeg"
+              alt="Детский праздник — аниматор с тортом"
+              className="w-full h-[320px] object-cover"
+            />
+          </div>
+          <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-white">
+            <img
+              src="https://cdn.poehali.dev/projects/1a262dcf-e384-44e2-8d98-0b46a8be6f9f/bucket/be87b507-84be-4d23-a618-a404cd94b213.jpg"
+              alt="Аниматоры Щенячий патруль"
+              className="w-full h-[320px] object-cover"
+            />
+          </div>
         </motion.div>
       </div>
     </section>

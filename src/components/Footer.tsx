@@ -1,4 +1,5 @@
-import { Linkedin, Twitter, Instagram, Mail, Phone } from "lucide-react"
+import { Instagram, Mail, Phone } from "lucide-react"
+import Icon from "@/components/ui/icon"
 
 export function Footer() {
   return (
@@ -8,13 +9,12 @@ export function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-                <span className="text-white font-bold text-lg">P</span>
+                <Icon name="Star" className="w-5 h-5 text-white" />
               </div>
-              <span className="font-serif text-xl font-bold">Prism</span>
+              <span className="font-serif text-xl font-bold text-primary">Мастер-Фломастер</span>
             </div>
             <p className="text-muted-foreground leading-relaxed max-w-md">
-              Конверсионные сайты для агентств, которые растут. Превращаем каждый визит в рост вместе с партнером,
-              который инвестирует в ваш успех.
+              Праздничное агентство «Мастер-Фломастер» — разукрасим ваш праздник! Дни рождения, корпоративы, свадьбы и детские вечеринки с яркими эмоциями.
             </p>
           </div>
 
@@ -28,7 +28,7 @@ export function Footer() {
               </li>
               <li>
                 <a href="#process" className="text-muted-foreground hover:text-primary transition-colors">
-                  Процесс
+                  Как работаем
                 </a>
               </li>
               <li>
@@ -49,20 +49,31 @@ export function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="mailto:hello@example.com"
+                  href="tel:+79034899419"
                   className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
                 >
-                  <Mail className="w-4 h-4" />
-                  hello@example.com
+                  <Phone className="w-4 h-4" />
+                  +7 (903) 489-94-19
                 </a>
               </li>
               <li>
                 <a
-                  href="tel:+74951234567"
+                  href="https://t.me/+79034899419"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
                 >
-                  <Phone className="w-4 h-4" />
-                  +7 (495) 123-45-67
+                  <Icon name="Send" className="w-4 h-4" />
+                  Telegram
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:hello@master-flo.ru"
+                  className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <Mail className="w-4 h-4" />
+                  hello@master-flo.ru
                 </a>
               </li>
             </ul>
@@ -71,27 +82,18 @@ export function Footer() {
 
         <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            {new Date().getFullYear()} Prism Creative. Все права защищены.
+            {new Date().getFullYear()} Мастер-Фломастер. Все права защищены.
           </p>
 
           <div className="flex items-center gap-4">
             <a
-              href="https://linkedin.com"
+              href="https://t.me/+79034899419"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
-              aria-label="LinkedIn"
+              aria-label="Telegram"
             >
-              <Linkedin className="w-5 h-5" />
-            </a>
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors"
-              aria-label="Twitter"
-            >
-              <Twitter className="w-5 h-5" />
+              <Icon name="Send" className="w-5 h-5" />
             </a>
             <a
               href="https://instagram.com"

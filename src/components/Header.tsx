@@ -10,7 +10,7 @@ export function Header() {
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
               <Icon name="Star" className="w-5 h-5 text-primary-foreground" />
             </div>
-            <span className="font-serif text-primary">ЯркоФест</span>
+            <span className="font-serif text-primary">Мастер-Фломастер</span>
           </a>
 
           <nav className="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">

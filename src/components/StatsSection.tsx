@@ -15,29 +15,12 @@ export function StatsSection() {
           <span className="text-accent">по-настоящему радостными</span>. Каждая деталь — с душой.
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="border-2 border-dashed border-primary/40 rounded-3xl p-8 text-center bg-yellow-50"
-          >
-            <div className="mb-4">
-              <span className="font-serif text-7xl md:text-8xl font-bold">500</span>
-              <span className="text-primary text-5xl md:text-6xl font-serif font-bold">+</span>
-            </div>
-            <h3 className="font-serif text-2xl font-semibold mb-4">Праздников проведено</h3>
-            <p className="text-muted-foreground font-sans leading-relaxed">
-              Более 500 счастливых событий — и каждый раз мы делаем это с любовью и яркостью!
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.6, delay: 0.2 }}
             className="border-2 border-dashed border-primary/40 rounded-3xl p-8 text-center bg-pink-50"
           >
             <div className="mb-4">
@@ -54,7 +37,7 @@ export function StatsSection() {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.6, delay: 0.3 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
             className="border-2 border-dashed border-primary/40 rounded-3xl p-8 text-center bg-green-50"
           >
             <div className="mb-4">

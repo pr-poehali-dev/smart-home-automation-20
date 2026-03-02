@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/3d-button"
-import { Triangle, ArrowRight } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 import { motion } from "framer-motion"
+import Icon from "@/components/ui/icon"
 
 export function CTASection() {
   return (
@@ -23,7 +24,7 @@ export function CTASection() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-6"
             >
-              <Triangle className="w-8 h-8 text-[rgba(255,117,38,1)]" />
+              <Icon name="PartyPopper" className="w-8 h-8 text-primary" />
             </motion.div>
 
             <motion.h2
@@ -33,7 +34,7 @@ export function CTASection() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="font-serif text-4xl md:text-5xl font-bold mb-6"
             >
-              Готовы масштабировать агентство?
+              Готовы устроить незабываемый праздник?
             </motion.h2>
 
             <motion.p
@@ -43,7 +44,7 @@ export function CTASection() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed"
             >
-              Станьте партнером Prism и создавайте конверсионные сайты, которые приносят реальные результаты вашим клиентам. Давайте расти вместе.
+              Позвоните или напишите нам — и «Мастер-Фломастер» разукрасит ваш особенный день в самые яркие цвета!
             </motion.p>
 
             <motion.div
@@ -54,10 +55,12 @@ export function CTASection() {
               className="flex flex-col sm:flex-row gap-4 justify-center items-center"
             >
               <Button size="lg" className="rounded-full" leadingIcon={ArrowRight}>
-                Записаться на звонок
+                <a href="tel:+79034899419">Позвонить нам</a>
               </Button>
               <Button size="lg" variant="outline" className="rounded-full bg-transparent">
-                Смотреть работы
+                <a href="https://t.me/+79034899419" target="_blank" rel="noopener noreferrer">
+                  Написать в Telegram
+                </a>
               </Button>
             </motion.div>
 
@@ -68,7 +71,7 @@ export function CTASection() {
               transition={{ duration: 0.6, delay: 0.6 }}
               className="text-sm text-muted-foreground mt-6"
             >
-              Без обязательств - Бесплатная консультация - Ответ в течение 24 часов
+              Бесплатная консультация · Выезд на осмотр площадки · Ответ в течение часа
             </motion.p>
           </div>
         </motion.div>
