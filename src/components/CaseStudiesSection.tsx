@@ -3,32 +3,32 @@ import { motion } from "framer-motion"
 export function CaseStudiesSection() {
   const caseStudies = [
     {
-      client: "Stellar Analytics",
-      project: "Редизайн лендинга SaaS",
-      metric: "Рост конверсий на 127%",
-      description: "Полный редизайн главного лендинга продукта с A/B-тестированием и оптимизацией конверсий.",
-      image: "/placeholder.svg?height=400&width=600",
+      client: "Семья Ивановых",
+      project: "День рождения принцессы",
+      metric: "150 гостей в восторге",
+      description: "Оформили залу в стиле «Замок» с живыми цветами, тематическим тортом и интерактивными играми для детей.",
+      image: "https://cdn.poehali.dev/projects/1a262dcf-e384-44e2-8d98-0b46a8be6f9f/files/4c246540-39af-4d16-933d-78022cf4f3e5.jpg",
     },
     {
-      client: "Nova Industries",
-      project: "White-label платформа",
-      metric: "Онбординг в 3 раза быстрее",
-      description: "Создали масштабируемое white-label решение для обслуживания 50+ клиентов одновременно.",
-      image: "/placeholder.svg?height=400&width=600",
+      client: "ООО «Технологии»",
+      project: "Новогодний корпоратив",
+      metric: "300 сотрудников — один праздник",
+      description: "Организовали грандиозный новогодний вечер с живой музыкой, фотозоной и яркими тематическими декорациями.",
+      image: "https://cdn.poehali.dev/projects/1a262dcf-e384-44e2-8d98-0b46a8be6f9f/files/68d2ed3f-7d80-4a45-b3b7-ecb87b950021.jpg",
     },
     {
-      client: "Quantum Dynamics",
-      project: "Оптимизация e-commerce",
-      metric: "Рост выручки на 85%",
-      description: "Оптимизировали checkout и внедрили конверсионные паттерны дизайна по всей платформе.",
-      image: "/placeholder.svg?height=400&width=600",
+      client: "Анна и Дмитрий",
+      project: "Свадьба в стиле бохо",
+      metric: "Незабываемый день на всю жизнь",
+      description: "Создали уникальный образ торжества с живыми цветами, гирляндами и атмосферой настоящего волшебства.",
+      image: "https://cdn.poehali.dev/projects/1a262dcf-e384-44e2-8d98-0b46a8be6f9f/files/9645cd16-9d19-4ce7-8434-313748dd0aec.jpg",
     },
     {
-      client: "Alpine Ventures",
-      project: "Перезапуск сайта агентства",
-      metric: "200+ лидов в месяц",
-      description: "Стратегический редизайн для лидогенерации с интеграцией CRM и автоматизацией.",
-      image: "/placeholder.svg?height=400&width=600",
+      client: "Детский сад «Солнышко»",
+      project: "Выпускной вечер",
+      metric: "80 детей и 160 счастливых родителей",
+      description: "Оформили яркий выпускной с театрализованным представлением, аниматорами и памятными подарками каждому ребёнку.",
+      image: "https://cdn.poehali.dev/projects/1a262dcf-e384-44e2-8d98-0b46a8be6f9f/files/4c246540-39af-4d16-933d-78022cf4f3e5.jpg",
     },
   ]
 
@@ -43,7 +43,7 @@ export function CaseStudiesSection() {
             transition={{ duration: 0.8 }}
             className="font-serif text-4xl md:text-5xl font-bold mb-4"
           >
-            Кейсы
+            Наши кейсы
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -52,7 +52,7 @@ export function CaseStudiesSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg text-muted-foreground max-w-2xl mx-auto"
           >
-            Реальные результаты агентств, с которыми мы работали для роста и конверсий.
+            Реальные праздники, которые мы превратили в яркие воспоминания.
           </motion.p>
         </div>
 
@@ -68,7 +68,7 @@ export function CaseStudiesSection() {
             >
               <div className="aspect-[3/2] overflow-hidden">
                 <img
-                  src={study.image || "/placeholder.svg"}
+                  src={study.image}
                   alt={study.project}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
@@ -76,7 +76,7 @@ export function CaseStudiesSection() {
               <div className="p-8">
                 <div className="text-sm font-semibold text-primary mb-2">{study.client}</div>
                 <h3 className="font-serif text-2xl font-bold mb-3">{study.project}</h3>
-                <div className="text-3xl font-bold text-primary mb-4">{study.metric}</div>
+                <div className="text-xl font-bold text-primary mb-4">{study.metric}</div>
                 <p className="text-muted-foreground leading-relaxed">{study.description}</p>
               </div>
             </motion.div>

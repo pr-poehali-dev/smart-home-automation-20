@@ -1,58 +1,58 @@
 import { Button } from "@/components/ui/3d-button"
-import { Check } from "lucide-react"
+import Icon from "@/components/ui/icon"
 import { motion } from "framer-motion"
 
 export function PricingSection() {
   const plans = [
     {
-      name: "Старт",
-      price: "250 000 ₽",
-      period: "за проект",
-      description: "Идеально для агентств, которые хотят попробовать конверсионный дизайн.",
+      name: "Камерный",
+      price: "30 000 ₽",
+      period: "от",
+      description: "Уютный праздник до 30 человек — домашняя вечеринка или небольшой день рождения.",
       features: [
-        "Дизайн одной страницы",
-        "Адаптивная верстка",
-        "2 раунда правок",
-        "Срок — 1 неделя",
-        "Базовая SEO-оптимизация",
+        "Оформление шарами и декором",
+        "Фотозона",
+        "Ведущий 2 часа",
+        "Сценарий под ваш запрос",
+        "Доставка и монтаж декора",
       ],
     },
     {
-      name: "Профи",
-      price: "750 000 ₽",
-      period: "за проект",
-      description: "Для агентств, готовых масштабироваться с комплексными веб-решениями.",
+      name: "Яркий",
+      price: "80 000 ₽",
+      period: "от",
+      description: "Полноценный праздник до 100 человек — день рождения, юбилей или детская вечеринка.",
       features: [
-        "Многостраничный сайт (до 10 страниц)",
-        "Собственная дизайн-система",
-        "Неограниченные правки",
-        "Срок — 2 недели",
-        "Продвинутый SEO и аналитика",
-        "Интеграция CMS",
-        "30 дней поддержки после запуска",
+        "Профессиональное оформление",
+        "Аниматоры и ведущий",
+        "Шоу-программа",
+        "Тематический торт",
+        "Фото и видеосъёмка",
+        "Монтаж и демонтаж",
+        "Сопровождение в день праздника",
       ],
       featured: true,
     },
     {
-      name: "Бизнес",
+      name: "Грандиозный",
       price: "По запросу",
       period: "свяжитесь с нами",
-      description: "Для агентств с потребностью в white-label решениях и постоянном партнерстве.",
+      description: "Масштабные события — корпоративы, свадьбы, фестивали без ограничений.",
       features: [
-        "Неограниченные страницы",
-        "White-label решения",
+        "Безлимитный масштаб",
         "Персональный менеджер",
-        "Приоритетная поддержка",
-        "Кастомные интеграции",
-        "Постоянное обслуживание",
-        "Мониторинг производительности",
-        "Ежемесячные стратегические созвоны",
+        "Уникальная концепция",
+        "Полное продакшн-сопровождение",
+        "Живая музыка / DJ",
+        "Кейтеринг под ключ",
+        "Постпродакшн фото и видео",
+        "Эксклюзивные декорации",
       ],
     },
   ]
 
   return (
-    <section className="py-24 px-6 bg-secondary">
+    <section id="pricing" className="py-24 px-6 bg-secondary">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <motion.h2
@@ -71,7 +71,7 @@ export function PricingSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg text-muted-foreground max-w-2xl mx-auto"
           >
-            Выберите план под задачи вашего агентства. Все планы включают наш подход к конверсиям.
+            Выберите формат под ваш праздник. Всегда честно и без скрытых платежей.
           </motion.p>
         </div>
 
@@ -88,21 +88,21 @@ export function PricingSection() {
               }`}
             >
               {plan.featured && (
-                <div className="text-xs font-bold text-primary uppercase tracking-wider mb-4">Популярный</div>
+                <div className="text-xs font-bold text-primary uppercase tracking-wider mb-4">🎉 Самый популярный</div>
               )}
               <h3 className="font-serif text-2xl font-bold mb-2">{plan.name}</h3>
               <div className="mb-4">
+                <span className="text-muted-foreground mr-1 text-sm">{plan.period}</span>
                 <span className="text-4xl font-bold">{plan.price}</span>
-                <span className="text-muted-foreground ml-2">{plan.period}</span>
               </div>
               <p className="text-muted-foreground mb-6 leading-relaxed">{plan.description}</p>
               <Button stretch className="mb-6 rounded-full">
-                Начать
+                Заказать
               </Button>
               <div className="space-y-3">
                 {plan.features.map((feature, featureIndex) => (
                   <div key={featureIndex} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <Icon name="Check" className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <span className="text-sm">{feature}</span>
                   </div>
                 ))}
